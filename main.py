@@ -37,7 +37,7 @@ name_short = player[0:1] + '. ' + last_name
 print(name_short)
 
 chant = (first_name + '! ') * len(first_name)
-#print(chant)
+print(chant)
 
 good_chant = chant[-1:] != ''
 print(good_chant)
