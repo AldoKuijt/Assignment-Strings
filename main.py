@@ -18,30 +18,26 @@ scorers = scorer_1 +''+ str(goal_0) + ', ' + scorer_2 + '' + str(goal_1)
 print(scorers)
 
 #4
-report = f'{scorer_1}scored in the {goal_0}nd minute' '\n' f'{scorer_2}scored in the {goal_1}th minute' 
+report = f'{scorer_1}scored in the {goal_0}nd minute\n{scorer_2}scored in the {goal_1}th minute' 
 print(report)
 
 #part 2
-
-#1
 player = 'Erwin Koeman'
 
-#2
-first_name = player[:5]
+first_name = player[0: player.find(' ')]
 print(first_name)
 
-#3
-last_name_len = len(player[6:])
+last_name = player[player.find(' ')+ 1:]
+print(last_name)
+
+last_name_len = len(player[player.find(' ')+ 1:])
 print(last_name_len)
 
-#4
-name_short = player[:1] + '. ' + player[6:]
+name_short = player[0:1] + '. ' + last_name
 print(name_short)
 
-#5
-chant = (first_name + '!' + ' ') * 4 + (first_name + '!')
-print(chant)
+chant = (first_name + '! ') * len(first_name)
+#print(chant)
 
-#6
 good_chant = chant[-1:] != ''
 print(good_chant)
