@@ -5,19 +5,15 @@ __human_name__ = 'strings'
 # Add your code after this line
 #Part 1
 
-#1
 scorer_1 = 'Ruud Gullit '
 scorer_2 = 'Marco van Basten '
 
-#2
 goal_0 = 32
 goal_1 = 54
 
-#3
 scorers = scorer_1 +''+ str(goal_0) + ', ' + scorer_2 + '' + str(goal_1)
 print(scorers)
 
-#4
 report = f'{scorer_1}scored in the {goal_0}nd minute\n{scorer_2}scored in the {goal_1}th minute' 
 print(report)
 
@@ -37,6 +33,7 @@ name_short = player[0:1] + '. ' + last_name
 print(name_short)
 
 chant = (first_name + '! ') * len(first_name)
+chant = chant.rstrip(chant[-1])
 print(chant)
 
 good_chant = chant[-1:] != ''
